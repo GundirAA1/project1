@@ -1,0 +1,20 @@
+/* Стилі для прогрес-бара */
+.progress-container {
+    width: 50%; /* Ширина контейнера прогрес-бара */
+    height: 30px;
+    background-color: #f0f0f0;
+    margin: 0 auto; /* Вирівнювання по центру */
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: orange; /* Зміна кольору на оранжевий */
+    animation: progress-animation 5s linear infinite; /* Анімація для руху прогрес-бара */
+  }
+  
+  @keyframes progress-animation {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+  
